@@ -1,0 +1,16 @@
+<div class="container">
+  <div *ngFor="let book of books" id="bk-{{ book.id }}">
+    <div class="flex-space">
+      <h2>{{ book.title }}</h2>
+      <h2>#{{ book.id }}</h2>
+    </div>
+    <div>
+      <div class="flex-space">
+        <p>Author: {{ book.auther }}</p>
+        <p>Publish Date: {{ book.publishdate }}</p>
+      </div>
+      <span>Edition: {{ book.edition }} </span>
+      <span>Pages: {{ book.pages }} </span>
+    </div>
+  </div>
+</div>
